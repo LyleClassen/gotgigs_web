@@ -1,3 +1,10 @@
+## Project Setup:
+   1. **Install Latest Node LTS *(10.16.0 @ 26/07/2019)*** (https://nodejs.org/en/)
+   2. **Clone Repo**
+   3. **Open Repo in Terminal**
+   4. Run: ``npm install`` to install project dependancies.
+   5. Run: ``npm start`` to run project local dev server.
+
 ## How I Made This:
 - **Webpack, Babel and React**
   - Follow: https://www.youtube.com/watch?v=deyxI-6C2u4
