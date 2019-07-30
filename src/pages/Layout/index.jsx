@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-
+import styled from 'styled-components';
 import AppBar from 'components/AppBar';
+
+const StyledLayout = styled.div`
+  padding-top: 50px;
+`;
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <Fragment>
       <AppBar />
-      {children}
-    </div>
+      <StyledLayout>{children}</StyledLayout>
+    </Fragment>
   );
 };
 
