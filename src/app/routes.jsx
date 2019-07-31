@@ -39,12 +39,14 @@ const Routes = () => (
     render={({ location }) => (
       <StyledTransitionGroup>
         <CSSTransition key={location.key} timeout={600} classNames="pageSlider">
-          <Suspense fallback={<div>Loading...</div>}>
-            <Switch location={location}>
-              <Route path="/" exact component={Page1} />
-              <Route path="/page2" component={Page2} />
-            </Switch>
-          </Suspense>
+          <div>
+            <Suspense fallback={<div>Loading...</div>}>
+              <Switch location={location}>
+                <Route path="/" exact component={Page1} />
+                <Route path="/page2" component={Page2} />
+              </Switch>
+            </Suspense>
+          </div>
         </CSSTransition>
       </StyledTransitionGroup>
     )}

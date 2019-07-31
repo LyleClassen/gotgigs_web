@@ -15,6 +15,6 @@ export default createGlobalStyle`
 
   html,
   body {
-    overflow: auto;
+    overflow: hidden auto;
   }
 `;
